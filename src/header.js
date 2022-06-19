@@ -3,7 +3,8 @@ import PropTypes from 'prop-types'
 
 const header = props => {
   return (
-    <div>Kishan Kumar Zalvadia</div>
+    <div className='header'>\
+    <h1>I am Header</h1></div>
   )
 }
 
