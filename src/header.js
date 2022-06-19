@@ -10,15 +10,23 @@ import './Header.css';
 const header = props => {
   return (
     <div className='header'>
-      <MenuIcon />
-      <img className="header__logo"
-        src='https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg'></img>
-      <input type="text" />
-      <SearchIcon />
-      <VideoCallIcon />
-      <AppsIcon />
-      <NotificationsIcon />
-      <FaceIcon />
+      <div className="header__left">
+        <MenuIcon />
+        <img className="header__logo"
+          src='https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg'></img>
+      </div>
+      <div className="header__input">
+        <input type="text" placeholder='Search' />
+        <SearchIcon className='header__inputButton' />
+      </div>
+
+      <div className="header__icons">
+        <VideoCallIcon className='header__icon' />
+        <AppsIcon className='header__icon' />
+        <NotificationsIcon className='header__icon' />
+        <FaceIcon />
+      </div>
+
     </div>
   )
 }
