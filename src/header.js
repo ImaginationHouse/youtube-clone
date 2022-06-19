@@ -1,10 +1,25 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import MenuIcon from '@mui/icons-material/Menu';
+import SearchIcon from '@mui/icons-material/Search';
+import VideoCallIcon from '@mui/icons-material/VideoCall';
+import AppsIcon from '@mui/icons-material/Apps';
+import NotificationsIcon from '@mui/icons-material/Notifications';
+import FaceIcon from '@mui/icons-material/Face';
+import './Header.css';
 
 const header = props => {
   return (
-    <div className='header'>\
-    <h1>I am Header</h1></div>
+    <div className='header'>
+      <MenuIcon />
+      <img className="header__logo"
+        src='https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg'></img>
+      <input type="text" />
+      <SearchIcon />
+      <VideoCallIcon />
+      <AppsIcon />
+      <NotificationsIcon />
+      <FaceIcon />
+    </div>
   )
 }
 
